@@ -3,8 +3,9 @@ import random
 import os
 import time
 import calendar
+import math
 from builtins import print
-
+import support
 
 def printme(str):
     "This prints a passed string into this function"
@@ -23,6 +24,11 @@ def printme2( str ):
 
 
 myfunc()
+
+support.printsupport('df')
+support.printsupport2("dsfgnh9")
+
+support.printsupport3('Finally Modules Recognized')
 
 print("Hello, Python!")
 print("Hello, Python!")
@@ -189,6 +195,15 @@ van = sum = lambda arg1, arg2: arg1 + arg2;
 
 print(sum(100,200))
 print(van(100,200))
+
+
+# Dir Function list the names of all the modules, variables and functions that are defined in a module. Following is a simple example:
+prnmathdir = dir(math)
+print(prnmathdir)
+
+# Printing Python Current Directory...
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print(dir_path)
 
 # if expression :
 #    suite

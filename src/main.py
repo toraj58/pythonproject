@@ -191,7 +191,7 @@ printme2(str = 'hey')
 
 # Python Lambda Functions (anonymous functions) :
 
-van = sum = lambda arg1, arg2: arg1 + arg2;
+van = sum = lambda arg1, arg2: arg1 + arg2
 
 print(sum(100,200))
 print(van(100,200))

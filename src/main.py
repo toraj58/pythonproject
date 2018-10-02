@@ -7,6 +7,7 @@ import math
 from builtins import print
 import support
 
+
 def printme(str):
     "This prints a passed string into this function"
     print(str)
@@ -17,10 +18,11 @@ def myfunc():
     print('\n\nstarting new python Function\n\n')
     return
 
-def printme2( str ):
-   "This prints a passed string into this function2"
-   print(str)
-   return;
+
+def printme2(str):
+    "This prints a passed string into this function2"
+    print(str)
+    return;
 
 
 myfunc()
@@ -158,11 +160,10 @@ for x in (1, 2, 3, 'jij', 'ik'):
     print('next')
     print('i :: ', i)
 
-
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-del dict['Name']; # remove entry with key 'Name'
-dict.clear();     # remove all entries in dict
-del dict ;        # delete entire dictionary
+del dict['Name'];  # remove entry with key 'Name'
+dict.clear();  # remove all entries in dict
+del dict;  # delete entire dictionary
 
 # Important notes about Python Dictionary Keys:
 
@@ -187,15 +188,14 @@ print(days)
 print(days[:2])
 print(days[1:2])
 
-printme2(str = 'hey')
+printme2(str='hey')
 
 # Python Lambda Functions (anonymous functions) :
 
 van = sum = lambda arg1, arg2: arg1 + arg2
 
-print(sum(100,200))
-print(van(100,200))
-
+print(sum(100, 200))
+print(van(100, 200))
 
 # Dir Function list the names of all the modules, variables and functions that are defined in a module. Following is a simple example:
 prnmathdir = dir(math)
@@ -205,17 +205,16 @@ print(prnmathdir)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
 
-#Python Smart List Generate ::
-#The following command will generate a list in the spefied range also multiply each item with 5
+# Python Smart List Generate ::
+# The following command will generate a list in the spefied range also multiply each item with 5
 # The following way of initializing lists is Meticulously concise and remarkably cryptic.
-smartList = [x*5 for x in range(2,10,2)]
-smartList2 = [x*7 for x in range(2,20,1)]
-smartList3 = [x*9 for x in range(2,30,5)]
-smartList4 = [x*10 for x in range(2,40,4)]
+smartList = [x * 5 for x in range(2, 10, 2)]
+smartList2 = [x * 7 for x in range(2, 20, 1)]
+smartList3 = [x * 9 for x in range(2, 30, 5)]
+smartList4 = [x * 10 for x in range(2, 40, 4)]
 
 for x in smartList:
     print('Smart List Item :: ', x)
-
 
 # following try to create a new directory in the current path
 # if directory exists then it throw and exception complaining that dir already exists.

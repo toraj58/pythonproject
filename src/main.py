@@ -208,6 +208,9 @@ print(dir_path)
 #Python Smart List Generate ::
 #The following command will generate a list in the spefied range also multiply each item with 5
 smartList = [x*5 for x in range(2,10,2)]
+smartList2 = [x*7 for x in range(2,20,1)]
+smartList3 = [x*9 for x in range(2,30,5)]
+smartList4 = [x*10 for x in range(2,40,4)]
 
 for x in smartList:
     print('Smart List Item :: ', x)

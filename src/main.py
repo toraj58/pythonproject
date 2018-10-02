@@ -227,7 +227,6 @@ currentPath = os.getcwd()
 print("Current Directory is :: ", currentPath)
 # os.rmdir("zeedir")
 
-
 # if expression :
 #    suite
 # elif expression :

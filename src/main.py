@@ -205,6 +205,26 @@ print(prnmathdir)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
 
+#Python Smart List Generate ::
+#The following command will generate a list in the spefied range also multiply each item with 5
+smartList = [x*5 for x in range(2,10,2)]
+
+for x in smartList:
+    print('Smart List Item :: ', x)
+
+
+# following try to create a new directory in the current path
+# if directory exists then it throw and exception complaining that dir already exists.
+# os.mkdir("zeedir")
+
+# The Following command (getcwd) get the current working directory
+# Also you can use chdir command to change the current direcitry.
+# For removing a directory just use : rmdir
+currentPath = os.getcwd()
+print("Current Directory is :: ", currentPath)
+# os.rmdir("zeedir")
+
+
 # if expression :
 #    suite
 # elif expression :

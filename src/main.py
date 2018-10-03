@@ -7,6 +7,7 @@ import math
 from builtins import print
 import support
 from domain.product import Product
+from domain.employee import Employee
 
 
 class User:
@@ -251,6 +252,9 @@ u.printuser()
 
 p = Product('lot', 100)
 p.printproduct()
+
+e = Employee("Martin", 1000)
+e.displayEmployee()
 
 # if expression :
 #    suite

@@ -6,6 +6,7 @@ import calendar
 import math
 from builtins import print
 import support
+from domain.product import Product
 
 
 class User:
@@ -247,6 +248,9 @@ print("Current Directory is :: ", currentPath)
 
 u = User('Touraj', 38)
 u.printuser()
+
+p = Product('lot', 100)
+p.printproduct()
 
 # if expression :
 #    suite

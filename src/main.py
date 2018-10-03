@@ -256,6 +256,17 @@ p.printproduct()
 e = Employee("Martin", 1000)
 e.displayEmployee()
 
+name = getattr(e,'name')
+salary = getattr(e,'salary')
+print(name)
+print(salary)
+
+# Built-In Class Attributes
+print(e.__class__)
+print(e.__dict__)
+print(e.__str__)
+print(e.__dir__)
+
 # if expression :
 #    suite
 # elif expression :

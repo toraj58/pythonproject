@@ -8,6 +8,19 @@ from builtins import print
 import support
 
 
+class User:
+
+    # Class Attribute
+    type = 'admin'
+
+    # Initializer / Instance Attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def printuser(self):
+        print('User Name : ', self.name)
+
 def printme(str):
     "This prints a passed string into this function"
     print(str)
@@ -230,6 +243,10 @@ for x in smartList:
 currentPath = os.getcwd()
 print("Current Directory is :: ", currentPath)
 # os.rmdir("zeedir")
+
+
+u = User('Touraj', 38)
+u.printuser()
 
 # if expression :
 #    suite

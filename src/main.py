@@ -213,6 +213,10 @@ smartList2 = [x * 7 for x in range(2, 20, 1)]
 smartList3 = [x * 9 for x in range(2, 30, 5)]
 smartList4 = [x * 10 for x in range(2, 40, 4)]
 
+# Here declaring another Smart list:
+
+smartList5 = [y ** 3 for y in range(100, 200, 2)]
+
 for x in smartList:
     print('Smart List Item :: ', x)
 

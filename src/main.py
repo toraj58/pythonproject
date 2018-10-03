@@ -256,6 +256,7 @@ p.printproduct()
 e = Employee("Martin", 1000)
 e.displayEmployee()
 
+# you can also use getattr like a getter in java
 name = getattr(e,'name')
 salary = getattr(e,'salary')
 print(name)
@@ -266,6 +267,8 @@ print(e.__class__)
 print(e.__dict__)
 print(e.__str__)
 print(e.__dir__)
+print(e.__module__)
+print(e.__doc__)
 
 # if expression :
 #    suite

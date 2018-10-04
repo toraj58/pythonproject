@@ -8,6 +8,7 @@ from builtins import print
 import support
 from domain.product import Product
 from domain.employee import Employee
+from threads.mythread import myThread
 
 
 class User:
@@ -269,6 +270,16 @@ print(e.__str__)
 print(e.__dir__)
 print(e.__module__)
 print(e.__doc__)
+
+print('starting threads ...')
+print("Starting %s" % "#Threads ...")
+
+# Creating Python Threads
+thread1 = myThread(1,'Thread-1', 1)
+thread2 = myThread(2,'Thread-2', 2)
+
+thread1.start()
+thread2.start()
 
 # if expression :
 #    suite

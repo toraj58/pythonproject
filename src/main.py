@@ -281,6 +281,12 @@ thread2 = myThread(2,'Thread-2', 2)
 thread1.start()
 thread2.start()
 
+# Waiting for the threads to be finished ...
+thread1.join()
+thread2.join()
+
+print('Main Thread Ended....')
+
 # if expression :
 #    suite
 # elif expression :

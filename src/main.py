@@ -12,7 +12,6 @@ from threads.mythread import myThread
 
 
 class User:
-
     # Class Attribute
     type = 'admin'
 
@@ -23,6 +22,7 @@ class User:
 
     def printuser(self):
         print('User Name : ', self.name)
+
 
 def printme(str):
     "This prints a passed string into this function"
@@ -258,8 +258,8 @@ e = Employee("Martin", 1000)
 e.displayEmployee()
 
 # you can also use getattr like a getter in java
-name = getattr(e,'name')
-salary = getattr(e,'salary')
+name = getattr(e, 'name')
+salary = getattr(e, 'salary')
 print(name)
 print(salary)
 
@@ -275,8 +275,8 @@ print('starting threads ...')
 print("Starting %s" % "#Threads ...")
 
 # Creating Python Threads
-thread1 = myThread(1,'Thread-1', 1)
-thread2 = myThread(2,'Thread-2', 2)
+thread1 = myThread(1, 'Thread-1', 1)
+thread2 = myThread(2, 'Thread-2', 2)
 
 thread1.start()
 thread2.start()

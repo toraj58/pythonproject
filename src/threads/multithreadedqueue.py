@@ -33,7 +33,7 @@ def process_data(threadName, q):
 threadList = ["Thread-1", "Thread-2", "Thread-3"]
 nameList = ["One", "Two", "Three", "Four", "Five"]
 queueLock = threading.Lock()
-workQueue = queue(10)
+workQueue = queue.Queue(10)
 threads = []
 threadID = 1
 

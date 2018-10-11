@@ -61,3 +61,19 @@ exitFlag = 1
 for t in threads:
     t.join()
 print("Exiting Main Thread")
+
+# [Touraj] Useful methods of Queue
+#
+#
+#
+#     get() − The get() removes and returns an item from the queue.
+#
+#     put() − The put adds item to a queue.
+#
+#     qsize() − The qsize() returns the number of items that are currently in the queue.
+#
+#     empty() − The empty( ) returns True if queue is empty; otherwise, False.
+#
+#     full() − the full() returns True if queue is full; otherwise, False.
+#
+#

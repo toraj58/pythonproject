@@ -63,8 +63,8 @@ counter = 100  # An integer assignment
 miles = 1000.0  # A floating point
 name = "John"  # A string
 
+# Different types of variable declarations
 a = b = c = 1
-
 a, b, c = 1, 2, "john"
 
 if True:
@@ -97,6 +97,7 @@ print(list)
 print(tinylist)
 print("---------")
 
+# Alternative to print function
 sys.stdout.write('Python Select Random form List\n')
 
 print(random.choice(list))
@@ -109,7 +110,7 @@ tinytuple = (123, 'john')
 
 print(tuple)
 
-# Python Dictionary
+# Python Dictionary consists of key/ value pairs
 
 dict = {}
 dict['one'] = "This is one"
@@ -156,16 +157,16 @@ print(title2)
 
 # How to Delete ITEM in Python List::
 
-list1 = ['physics', 'chemistry', 1997, 2000];
+list1 = ['physics', 'chemistry', 1997, 2000]
 print(list1)
-del list1[2];
+del list1[2]
 print("After deleting value at index 2 : ")
 print(list1)
 print(len(list1))  # Printing Length of the List
 
-tup = ('physics', 'chemistry', 1997, 2000);
-print(tup);
-del tup;  # you can Only Remove whole Tuple, It is not Necessary to delete individual tuples from Tuples because Tuples are Immutables.
+tup = ('physics', 'chemistry', 1997, 2000)
+print(tup)
+del tup  # you can Only Remove whole Tuple, It is not Necessary to delete individual tuples from Tuples because Tuples are Immutables.
 print("After deleting tup : ")
 # print(tup)
 
@@ -177,9 +178,9 @@ for x in (1, 2, 3, 'jij', 'ik'):
     print('i :: ', i)
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-del dict['Name'];  # remove entry with key 'Name'
-dict.clear();  # remove all entries in dict
-del dict;  # delete entire dictionary
+del dict['Name']  # remove entry with key 'Name'
+dict.clear()  # remove all entries in dict
+del dict  # delete entire dictionary
 
 # Important notes about Python Dictionary Keys:
 

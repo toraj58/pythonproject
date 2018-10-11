@@ -23,3 +23,18 @@ def print_time(threadName, counter, delay):
       print("%s: %s" % (threadName, time.ctime(time.time())))
       # print('inside thread run')
       counter -= 1
+
+
+    # [Touraj] :: Following is useful Thread Methods
+
+    # run() − The run() method is the entry point for a thread.
+    #
+    # start() − The start() method starts a thread by calling the run method.
+    #
+    # join([time]) − The join() waits for threads to terminate.
+    #
+    # isAlive() − The isAlive() method checks whether a thread is still executing.
+    #
+    # getName() − The getName() method returns the name of a thread.
+    #
+    # setName() − The setName() method sets the name of a thread.

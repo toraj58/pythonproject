@@ -1,5 +1,7 @@
 from multiprocessing.dummy import Pool as ThreadPool
 
+# [Touraj] :: Good sample for simple ThreadPool and parallel processing of some algorithms that can be complex
+# and time Consuming
 
 def squareNumber(n):
     return n ** 2

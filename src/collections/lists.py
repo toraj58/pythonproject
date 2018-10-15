@@ -1,4 +1,6 @@
 # a list of strings
+from builtins import print
+
 animals = ['cat', 'dog', 'fish', 'bison']
 
 # a list of integers
@@ -74,3 +76,38 @@ print(pets) # pets still refers to the old list
 pets = animals[:] # assign a *copy* of animals to pets
 animals.append('aardvark')
 print(pets) # pets remains unchanged, because it refers to a copy, not the original list
+
+# We can mix the types of values that we store in a list:
+my_list = ['cat', 12, 35.8]
+
+numbers = [34, 67, 12, 29]
+my_number = 67
+
+
+# How do we check whether a list contains a particular value? We use in or not in, the membership operators:
+
+numbers = [34, 67, 12, 29]
+number = 67
+
+if number in numbers:
+    print("%d is in the list!" % number)
+
+my_number = 90
+if my_number not in numbers:
+    print("%d is not in the list!" % my_number)
+
+print('-----------------------------------------------')
+
+# There are many built-in functions which we can use on lists and other sequences:
+
+# the length of a list
+print(len(animals))
+
+# the sum of a list of numbers
+print(sum(numbers))
+
+# are any of these values true?
+print(any([1,0,1,0,1]))
+
+# are all of these values true?
+print(all([1,0,1,0,1]))

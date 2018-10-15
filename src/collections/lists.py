@@ -23,3 +23,10 @@ print(numbers[1]) # 7
 
 # This will give us an error, because the list only has four elements
 # print(animals[6])
+
+print(animals[-1]) # the last element -- bison
+print(numbers[-2]) # the second-last element -- 20
+
+#  Extracting a subset of the list
+print(animals[1:3]) # ['dog', 'fish']
+print(animals[1:-1]) # ['dog', 'fish']

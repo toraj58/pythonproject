@@ -102,3 +102,73 @@ print(list(range(1, 11)))
 print(list(range(1, 11, 2)))
 
 
+print('-------------------------------Dictionaries--------------------------------')
+
+# Like sets, dictionaries are not ordered – if we print a dictionary, the order will be random.
+
+marbles = {"red": 34, "green": 30, "brown": 31, "yellow": 29 }
+
+personal_details = {
+    "name": "Jane Doe",
+    "age": 38, # trailing comma is legal
+}
+
+print(marbles["green"])
+print(personal_details["name"])
+
+# This will give us an error (KeyError), because there is no such key in the dictionary
+# print(marbles["blue"])
+
+# modify a value
+marbles["red"] += 3
+personal_details["name"] = "Jane Q. Doe"
+
+print(marbles["red"])
+print(personal_details["name"])
+
+battleship_guesses = {
+    (3, 4): False,
+    (2, 6): True,
+    (2, 5): True,
+}
+
+surnames = {} # this is an empty dictionary
+surnames["John"] = "Smith"
+surnames["John"] = "Doe"
+print(surnames) # we overwrote the older surname
+
+marbles = {"red": 34, "green": 30, "brown": 31, "yellow": 29 }
+marbles["blue"] = 30 # this will work
+# marbles["purple"] += 2 # this will fail(KeyError) -- the increment operator needs an existing value to modify!
+
+# [Touraj] : commonly used methods of dictionary objects:
+
+marbles = {"red": 34, "green": 30, "brown": 31, "yellow": 29 }
+
+# Get a value by its key, or None if it doesn't exist
+marbles.get("orange")
+# We can specify a different default
+marbles.get("orange", 0)
+
+# Add several items to the dictionary at once
+marbles.update({"orange": 34, "blue": 23, "purple": 36})
+
+# All the keys in the dictionary
+print(marbles.keys())
+# All the values in the dictionary
+marbles.values()
+# All the items in the dictionary
+marbles.items()
+
+# [Touraj] check if key exists in a dictionary using in or not in
+print("purple" in marbles)
+print("white" not in marbles)
+
+# [Touraj] :: check if a value exists in a dictionary
+print("Smith" in surnames.values())
+print("Doe" in surnames.values())
+
+
+
+
+

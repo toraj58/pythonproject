@@ -43,3 +43,42 @@ print(WEEKDAYS) # oops
 
 # Also in the formatting string in print we actually using tuples!
 print("%d %d %d" % (1, 2, 3))
+
+print('-------------------------------Sets-----------------------------------')
+
+animals = {'cat', 'dog', 'goldfish', 'canary', 'cat'}
+print(animals) # the set will only contain one cat
+
+even_numbers = {2, 4, 6, 8, 10}
+big_numbers = {6, 7, 8, 9, 10}
+
+# subtraction: big numbers which are not even
+print(big_numbers - even_numbers)
+
+# union: numbers which are big or even
+print(big_numbers | even_numbers)
+
+# intersection: numbers which are big and even
+print(big_numbers & even_numbers)
+
+# numbers which are big or even but not both
+print(big_numbers ^ even_numbers)
+
+# It is important to note that unlike lists and tuples sets are not ordered.
+# When we print a set, the order of the elements will be random.
+# If we want to process the contents of a set in a particular order,
+# we will first need to convert it to a list or tuple and sort it:
+
+# Printing unsorted set
+print(animals)
+
+# Printing set after sorting
+# The sorted function returns a list object.
+print(sorted(animals))
+
+# [Touraj] : Important to know:
+# this is an empty dictionary
+a = {}
+
+# this is how we make an empty set
+b = set()

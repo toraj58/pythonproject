@@ -55,3 +55,22 @@ animals.append("squirrel")
 # remove an element by its index
 del animals[2]
 
+print('----------------------------')
+
+# Because lists are mutable, we can modify a list variable without assigning the variable
+#  a completely new value. Remember that if we assign the same list value to two variables,
+#  any in-place changes that we make while referring to the list by one variable name will
+#  also be reflected when we access the list through the other variable name:
+
+animals = ['cat', 'dog', 'goldfish', 'canary']
+pets = animals # now both variables refer to the same list object
+
+animals.append('aardvark')
+print(pets) # pets is still the same list as animals
+
+animals = ['rat', 'gerbil', 'hamster'] # now we assign a new list value to animals
+print(pets) # pets still refers to the old list
+
+pets = animals[:] # assign a *copy* of animals to pets
+animals.append('aardvark')
+print(pets) # pets remains unchanged, because it refers to a copy, not the original list

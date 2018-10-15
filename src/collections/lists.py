@@ -144,3 +144,9 @@ my_number = numbers.pop(0)
 numbers.remove(12)
 # if the value appears more than once, only the first one will be removed
 numbers.remove(5)
+
+# [Touraj] :: good to know following information:
+
+# Python has a built-in array type. It’s not quite as restricting as an array in C or Java
+#  – you have to specify a type for the contents of the array, and you can only use it to store numeric
+# values, but you can resize it dynamically, like a list. You will probably never need to use it.

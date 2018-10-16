@@ -78,6 +78,24 @@ class JeepBuilder(Builder):
         body.shape = "SUV"
         return body
 
+#   [Touraj ]BMW Builder
+class BMWBuilder(Builder):
+
+    def getWheel(self):
+        wheel = Wheel()
+        wheel.size = 44
+        return wheel
+
+    def getEngine(self):
+        engine = Engine()
+        engine.horsepower = 2200
+        return engine
+
+    def getBody(self):
+        body = Body()
+        body.shape = "SEDAN"
+        return body
+
 
 # Car parts
 class Wheel:
@@ -95,6 +113,7 @@ class Body:
 def main():
     print('Main...')
     jeepBuilder = JeepBuilder()  # initializing the class
+    bmwBuilder = BMWBuilder()  # initializing BMW Builder !
 
     director = Director()
 
@@ -103,7 +122,15 @@ def main():
     director.setBuilder(jeepBuilder)
     jeep = director.getCar()
     jeep.specification()
-    print("")
+    print("------------------------------")
+
+    print('Build BMW...')
+    director.setBuilder(bmwBuilder)
+    bmw = director.getCar()
+    bmw.specification()
+    print("------------------------------")
+    jeep.specification()
+
 
 
 if __name__ == "__main__":

@@ -90,3 +90,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Adapter pattern works as a bridge between two incompatible interfaces. This type of design pattern comes under structural
+# pattern as this pattern combines the capability of two independent interfaces.
+#
+# This pattern involves a single class, which is responsible to join functionalities of independent or incompatible interfaces.
+# A real life example could be the case of a card reader, which acts as an adapter between memory card and a laptop.
+# You plug in the memory card into the card reader and the card reader into the laptop so that memory card can be read via the laptop.
+#
+# The adapter design pattern helps to work classes together. It converts the interface of a class into another
+# interface based on requirement. The pattern includes a speciation a polymorphism which names one name and multiple forms.
+#  Say for a shape class which can use as per the requirements gathered.

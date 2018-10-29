@@ -1,3 +1,5 @@
+# Generic state that other states can inherit from it
+# Like a state machine you can switch from one state to another if it is valid otherwise you will get an error message!
 class ComputerState(object):
     name = "state"
     allowed = []
@@ -9,8 +11,8 @@ class ComputerState(object):
             'Current:', self, ' => switched to new state', state.name)
             self.__class__ = state
         else:
-            print
-            'Current:', self, ' => switching to', state.name, 'not possible.'
+            print(
+            'Current:', self, ' => switching to', state.name, 'not possible.')
 
     def __str__(self):
         return self.name
@@ -61,3 +63,8 @@ if __name__ == "__main__":
     comp.change(Hibernate)
     comp.change(On)
     comp.change(Off)
+
+# [Touraj] What is state pattern
+# It provides a module for state machines,
+# which are implemented using subclasses, derived from a specified state machine class.
+# The methods are state independent and cause transitions declared using decorators.

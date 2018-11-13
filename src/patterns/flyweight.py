@@ -44,3 +44,10 @@ def test():
 
 if __name__ == '__main__':
     test()
+
+# [Touraj]
+# The flyweight patterb comes under the structural design patterns category.
+#  It provides a way to decrease object count. It includes various features
+# that help in improving application structure. The most important feature of
+#  the flyweight objects is immutable. This means that they cannot be modified
+#  once constructed. The pattern uses a HashMap to store reference objects.

@@ -148,3 +148,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# [Touraj]
+#
+# Facade design pattern provides a unified interface to a set of interfaces in a subsystem.
+# It defines a higher-level interface that any subsystem can use.
+#
+# A facade class knows which subsystem is responsible for a request.
